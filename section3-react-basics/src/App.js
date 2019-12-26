@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -7,29 +6,21 @@ class App extends Component {
     // super invokes the constructor of the Component Class we are extending.
     super();
     this.state = {
-      monsters: [
-        {
-          name: 'Frankenstein',
-          id: 'asc1'
-        },
-        {
-          name: 'Dracula',
-          id: 'asr2'
-        },
-        {
-          name: 'Zombie',
-          id: 'as1w'
-        }
-      ]
+      monsters: []
     }
   }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(users => this.setState({monsters: users}, () => console.log(this.state.monsters) ))
+  }
+
   render() {
     return (
       <div className="App">
       {
-        this.state.monsters.map(el => {
-          return <h1 key={el.id}> { el.name} </h1>
-        })
+        this.state.monsters.map(el => <h1 key={el.id}> { el.name} </h1>)
       }
     </div>
     )
