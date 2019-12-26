@@ -7,25 +7,30 @@ class App extends Component {
     // super invokes the constructor of the Component Class we are extending.
     super();
     this.state = {
-      string: 'Hello Joseph!'
+      monsters: [
+        {
+          name: 'Frankenstein',
+          id: 'asc1'
+        },
+        {
+          name: 'Dracula',
+          id: 'asr2'
+        },
+        {
+          name: 'Zombie',
+          id: 'as1w'
+        }
+      ]
     }
   }
   render() {
     return (
       <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{this.state.string}</p>
-        <button onClick={() => {this.setState({string: 'Hello Kimo'})}}>Change Text</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        this.state.monsters.map(el => {
+          return <h1 key={el.id}> { el.name} </h1>
+        })
+      }
     </div>
     )
   }
