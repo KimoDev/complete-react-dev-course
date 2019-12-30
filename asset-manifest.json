@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/complete-react-dev-course/static/css/main.8bf00fca.chunk.css",
+    "main.js": "/complete-react-dev-course/static/js/main.dae11f30.chunk.js",
+    "main.js.map": "/complete-react-dev-course/static/js/main.dae11f30.chunk.js.map",
+    "runtime-main.js": "/complete-react-dev-course/static/js/runtime-main.f463b7a5.js",
+    "runtime-main.js.map": "/complete-react-dev-course/static/js/runtime-main.f463b7a5.js.map",
+    "static/js/2.6277ae1e.chunk.js": "/complete-react-dev-course/static/js/2.6277ae1e.chunk.js",
+    "static/js/2.6277ae1e.chunk.js.map": "/complete-react-dev-course/static/js/2.6277ae1e.chunk.js.map",
+    "index.html": "/complete-react-dev-course/index.html",
+    "precache-manifest.7406e7ab7fa5cf49d6a1bf216297446e.js": "/complete-react-dev-course/precache-manifest.7406e7ab7fa5cf49d6a1bf216297446e.js",
+    "service-worker.js": "/complete-react-dev-course/service-worker.js",
+    "static/css/main.8bf00fca.chunk.css.map": "/complete-react-dev-course/static/css/main.8bf00fca.chunk.css.map",
+    "static/js/2.6277ae1e.chunk.js.LICENSE": "/complete-react-dev-course/static/js/2.6277ae1e.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f463b7a5.js",
+    "static/js/2.6277ae1e.chunk.js",
+    "static/css/main.8bf00fca.chunk.css",
+    "static/js/main.dae11f30.chunk.js"
+  ]
+}
